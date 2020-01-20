@@ -144,16 +144,21 @@
                       <br>
                       <img src="dist/img/enternumber.png" alt="">
                 </div>
-                <button type="button" name="confirm" onclick="start()">Start!!!</button><br>
-                <form style="visibility: hidden;" name="form">
+                
+                <div class="inputform" style="visibility: hidden;" name="form">
                     Guess number:
-                    <input type="number" name="guess">
-                    <button type="button" name="confirm" onclick="chechupdate()">Summit!!!</button>
-                </form>
-                <input type="number" name="guess" placeholder="Number">
+                    <input type="number" name="guess" placeholder="Number">
+                    <button type="button" name="confirm" onclick="checkupdate()">Summit!!!</button>
+                </div>
+                
+                
+                <button type="button" name="confirm" onclick="start()">Start!!!</button><br>
                 <div id="previous" style="visibility: hidden;"><span></span></div>
+
+                <div class="callout callout-success">
                 <div id="game"><span></span></div>
-                <div id="status"><span></span></div>
+                <div id="status" ><span></span></div>
+                </div>
                 <div id="timer" style="visibility: hidden;"><span></span></div>
                 <button type="button" onclick="refresh()" name="refresh">Refresh!!!</button>
         </div>
